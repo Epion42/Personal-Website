@@ -1,0 +1,90 @@
+:root {
+  --brand: #af0202;
+  --brand-dark: #8a0202;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Bootstrap navbar, retinted to the site's brand red */
+.site-navbar {
+  background-color: var(--brand);
+}
+
+/* retint Bootstrap's danger/red components to the exact brand color */
+.btn-danger,
+.badge.bg-danger {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+
+.btn-outline-danger {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.btn-outline-danger:hover {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+.site-footer {
+  border-top: 2px solid var(--brand);
+}
+
+/* resume layout */
+.resume-body h3 {
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--brand);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resume-entry {
+  margin-bottom: 1.25rem;
+}
+
+.resume-entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+}
+
+.resume-dates {
+  font-weight: normal;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.resume-company {
+  font-style: italic;
+  margin-bottom: 0.35rem;
+}
+
+.resume-body ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.resume-body li {
+  margin-bottom: 0.35rem;
+}
